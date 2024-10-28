@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('mercedesfoto.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+        .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1 {
+    font-size: 3rem;
+}
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <p><b>¿Ya tienes una cuenta?</b></p>
+        <a href="iniciosesion.html" class="button"><i><b>Inicia sesión</b></i></a>
+        <a href="formulario.html" class="button"><i><b>Regístrate</b></i></a>
+
+        <div class="buttons-container">
+            <p><b>Explora todos nuestros modelos</b></p>
+            <a href="compactos.html" class="button"><b>Explora nuestros modelos Compactos</b></a>
+            <a href="suv.html" class="button"><b>Explora nuestros modelos SUV</b></a>
+            <a href="deportivos.html" class="button"><b>Explora nuestros modelos Deportivos</b></a>
+        </div>
+    </div>
+</body>
+</html>
