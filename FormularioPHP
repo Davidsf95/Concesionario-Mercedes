@@ -1,0 +1,32 @@
+<?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $servername = "localhost";
+            $username = "root";
+            $password = "1234";
+            $dbname = "mercedes";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            if ($conn->connect_error) {
+                die("Conexión fallida: " . $conn->connect_error);
+            }
+
+            $nombre = $_POST['nombre'];
+            $apellidos = $_POST['apellidos'];
+            $contraseña = password_hash($_POST['contraseña'], PASSWORD_DEFAULT); // Hashear la contraseña
+            $correo = $_POST['correo'];
+            $telefono = $_POST['telefono'];
+            $localidad = $_POST['localidad'];
+  
+
+            $sql = "INSERT INTO usuario (nombre, apellidos, contraseña, correo, telefono, localidad)
+            VALUES ('$nombre', '$apellidos', '$contraseña', '$correo', '$telefono', '$localidad')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "<div class='mensaje-exito'>Se ha registrado correctamente. Bienvenido. <a href='inicio.php'>Iniciar sesión</a></div>";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            $conn->close();
+        }
+        ?>
