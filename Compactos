@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Mejores Compactos</title>
+    <style>
+        .coche {
+            background-color: #ff2a2a;
+            padding: 20px;
+            text-align: center;
+        }
+         
+    
+        .coche img {
+            width: 400px; 
+            height: auto; 
+            margin: 10px;
+        }
+        
+        .coche2 {
+            background-color: #d6ca5d;
+            padding: 20px;
+            text-align: center;
+        }
+        .coche2 img {
+            width: 400px; 
+            height: auto; 
+            margin: 10px;
+        }
+       
+        
+        .coche p {
+            font-size: 24px;
+        }
+
+        .coche2 p {
+            font-size: 24px;
+        }
+        
+        .coche3 {
+            background-color: #9c8f8f;
+            padding: 20px;
+            text-align: center;
+        }
+        .coche3 img {
+            width: 400px; 
+            height: auto; 
+            margin: 10px;
+        }
+ 
+        .coche3 p {
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="coche">
+        <img src="A250.jpg" alt="Mercedes A250">
+        <img src="A2502.jpg" alt="Mercedes A2502">
+        <img src="A2503.jpg" alt="Mercedes A2503">
+        <h1>Mercedes A 250 </h1><br>
+            <p><b>Precio (con descuento y equipamiento seleccionado)	58.499 € <br>
+            Velocidad máxima	250 km/h <br>
+            Aceleración 0-100 km/h	6,3 s <br>
+            Consumo WLTP <br>
+            Combinado	6,9 l/100 km <br>
+            Combustible	Gasolina <br>
+            Potencia máxima	224 CV / 165 kW </b></p>
+    </div>
+
+    <div class="coche2">
+        <img src="CLASEA1.jpg" alt="Clase A1">
+        <img src="CLASEA2.jpg" alt="Clase A2">
+        <img src="CLASEA3.jpg" alt="Clase A3">
+        <h1>Mercedes Clase A </h1><br>
+            <p><b>Precio (con descuento y equipamiento seleccionado)	43.614 € <br>
+                Velocidad máxima	230 km/h <br>
+            Aceleración 0-100 km/h	8,1 s <br>
+            Consumo WLTP <br>
+            Combinado	5,8 l/100 km <br>
+            Combustible	Gasolina <br>
+            Potencia máxima	163 CV / 120 kW </b></p>
+    </div>
+
+    <div class="coche3">
+        <img src="CLASEC1.jpg" alt="Clase C1">
+        <img src="CLASEC2.jpg" alt="Clase C2">
+        <img src="CLASEC3.jpg" alt="Clase C3">
+        <h1>Mercedes Clase C </h1><br>
+            <p><b>Precio (con descuento y equipamiento seleccionado)	54.353 € <br>
+                Velocidad máxima	245 km/h <br>
+            Aceleración 0-100 km/h	7,3 s <br>
+            Consumo WLTP <br>
+            Combinado	4,6 l/100 km <br>
+            Combustible	Gasóleo <br>
+            Potencia máxima	200 CV / 147 kW </b></p>
+    </div>
+</body>
+</html>
