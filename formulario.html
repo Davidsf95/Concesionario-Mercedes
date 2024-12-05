@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE REGISTRO:</title>
+    <style> 
+        /* Clase que usamos para el fondo de la página */
+        .background {
+            background-image: url('fondoregistro.jpg'); /* Usar ruta relativa */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; 
+            background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+            height: 100vh; /* Esto asegura que el fondo cubra toda la altura de la ventana */
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 6px solid #000000;
+            border-radius: 20px;
+            background-color: rgba(182, 171, 192, 0.8); /* Color inicial con algo de transparencia */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center; 
+            color: rgb(255, 0, 0);
+            animation: changeColor 8s ease-in-out infinite;
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: rgb(255, 0, 0);
+            }
+            25% {
+                color: rgb(255, 165, 0);
+            }
+            50% {
+                color: rgb(255, 255, 0);
+            }
+            75% {
+                color: rgb(0, 255, 0);
+            }
+            100% {
+                color: rgb(0, 0, 255);
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Centrar el botón de enviar */
+        form {
+            text-align: center; 
+        }
+
+        input[type="submit"] {
+            display: inline-block; /* Esto permite que el botón se centre */
+            margin-top: 20px; 
+        }
+
+    </style>
+</head> 
+
+<body class="background"> <!-- Aplica la clase de fondo a la etiqueta body -->
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <form action="formuphp.php" method="post">
+        <label for="nombre"><b>Nombre</b>:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos"><b>Apellidos</b>:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="contraseña"><b>Contraseña</b>:</label> 
+        <input type="password" id="contraseña" name="contraseña" minlength="8" required>
+
+        <label for="telefono"><b>Teléfono</b></label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo"><b>Correo electrónico</b>:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="localidad"><b>Localidad</b>:</label>
+        <input type="text" id="localidad" name="localidad" required>
+
+        <input type="submit" value="Enviar">   
+    </form>
+</body>
+</html>
